@@ -1,0 +1,212 @@
+body{
+    background: linear-gradient(to bottom, rgb(49, 235, 105),skyblue);
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10%;   
+}
+.name{
+    padding-left: 10px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+.name  span{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: cyan;
+}
+.name h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    padding-left: 10px;
+    font-weight: 600;
+    color: crimson;
+}
+.name h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: rgba(223, 10, 53,0.7);
+}
+.links ul li:not(:last-child) {
+    padding-right: 20px;
+}
+.links ul li:last-child{
+    border: none;
+    margin-right: 10px;
+}
+.links ul li{
+    padding-right:20px;
+    border-right: 1px solid black;
+    display: inline-block;
+    margin: 0px 20px;
+}
+.links ul li a{
+    color: chocolate;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+.links ul li a::before,.links ul li a::after{
+    content: '';
+    transition: all 0.3s linear;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    direction: rtl;
+    background-color: deeppink;
+    margin: -3px 0px;
+}
+.links ul li a::after{
+    left: 0;
+    bottom: 0;
+}
+.links ul li a::before{
+    right: 0;
+    top: 0;
+    direction: rtl;
+}
+.links ul li:hover a::after,.links ul li:hover a::before{
+    width: 100%;
+}
+main{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 40px;
+    margin: 0px 20px 0px 10px;
+}
+main .personal-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    border:1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px 3px whitesmoke;
+}
+main .personal-information img{
+    border: 1px solid cyan;
+}
+main .personal-information table{
+    margin-left: 10px;
+}
+main .personal-information table tr td{
+    padding: 5px 10px;
+}
+main .personal-information table tr td:first-child{
+    color: darkmagenta;
+    text-transform: uppercase;
+}
+main .personal-information table tr td:last-child{
+    color: darkorange;
+    text-transform: capitalize;
+}
+main .personal-details{
+    background-color: white;
+    box-shadow: 0px 0px 30px 3px whitesmoke;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-right: 20px;
+    height: 100%;
+    width: 100%;
+}
+.personal-details .objective h2{
+    color: crimson;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.personal-details .objective h3{
+    width: 90%;
+    text-align: justify;
+    color: deeppink;
+}
+.personal-details .objective h3::first-letter{
+    padding-left: 50px;
+}
+.personal-details .Skills{
+    display: flex;
+    align-items: flex-start;
+    white-space: wrap;
+    flex-direction: column ;
+    justify-content: space-evenly;
+    height:70%;
+    gap: 20px;
+}
+.personal-details table{
+    width: 100%;
+    height: 40%;
+}
+.personal-details .Skills table caption{
+    font-size:20px;
+    color: midnightblue;
+}
+.personal-details .Skills table tr th {
+    font-size: 18px;
+    padding: 5px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: mediumspringgreen;
+    text-align: start;
+}
+.personal-details .Skills table tr td{
+    font-size: 20px;
+    padding: 5px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(9, 119, 119);
+}
+.Skills ul{
+    display: grid;
+    grid-template-columns: repeat(5,40%);
+    gap:10px 0px;
+    height: 15%;
+    list-style: none;
+}
+.Skills h3{
+    padding-top: 20px;
+    color: red;
+}
+.Skills ul li{
+    font-size: 20px;
+    color: rgb(105, 105, 7);
+} 
+footer{
+    height: 10%;
+}
+footer ul{
+   display: flex;
+   height: 100%;
+   width: 90%;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+   list-style: none;
+}
+footer ul li a img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+}
+footer ul li a img:hover{
+    mix-blend-mode: normal;
+    border-radius: 0;
+}
+
+
